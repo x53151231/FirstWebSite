@@ -30,7 +30,7 @@ start(){
     do
         ssh root@redis-cluster-$i "redis-server /etc/redis.conf"
     done
-
+    
     RETAVL=$?
     if [[ $RETAVL -eq 0 ]]; then
         echo "rediscluster is started!";
@@ -55,11 +55,25 @@ stop(){
     fi
     return $RETVAL;
 }
+#清空集群数据
+cleanup(){
+    for i in {1..6}
+    do
+        ssh root@redis-cluster-$i "redis-cli FLUSHALL"
+    done
 
+    RETVAL=$?
+    if [ $RETVAL -eq 0 ]; then
+        echo "rediscluster data cleared!";
+    else
+        echo "rediscluster data cleanup failed!";
+    fi
+    return $RETVAL;
+}
 #redis集群状态
 status(){
     /usr/local/bin/redis-cli CLUSTER INFO
-
+    
     RETAVL=$?
     if [[ $RETAVL -eq 0 ]]; then
         echo "rediscluster is not running!";
@@ -83,6 +97,9 @@ start)
 stop)
         stop
         ;;
+cleanup)
+        cleanup
+        ;;
 status)
         status
         ;;
@@ -90,6 +107,6 @@ restart)
         restart
         ;;
 *)
-        echo $"Usage:$0{start|stop|restart|help}"
+        echo $"Usage:$0{start|stop|cleanup|status|restart|help}"
 esac
 exit $RETAVL
