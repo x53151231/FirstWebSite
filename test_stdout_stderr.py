@@ -1,4 +1,4 @@
 import sys
 
-sys.stdout.write('hello\n')
-sys.stderr.write('world')
+sys.stderr.write('error message')
+sys.exit(1)
