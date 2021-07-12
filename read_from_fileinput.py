@@ -11,4 +11,3 @@ for line in fileinput.input():
     ]
     print(*meta, end="")
     print(line, end="")
-
