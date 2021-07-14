@@ -1,0 +1,5 @@
+2021-07-13 13:39:50,212 : test_logging.py : debug message
+2021-07-13 13:39:50,213 : test_logging.py : info message
+2021-07-13 13:39:50,213 : test_logging.py : warn message
+2021-07-13 13:39:50,213 : test_logging.py : error message
+2021-07-13 13:39:50,213 : test_logging.py : critical message

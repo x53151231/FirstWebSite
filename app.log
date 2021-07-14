@@ -1,0 +1,15 @@
+2021-07-14 13:37:58,373 WARNI [root:%(meessage)s
+2021-07-14 13:37:58,373 ERROR [root:%(meessage)s
+2021-07-14 13:37:58,373 CRITI [root:%(meessage)s
+2021-07-14 13:39:19,080 WARNI [root:%(message)s
+2021-07-14 13:39:19,080 ERROR [root:%(message)s
+2021-07-14 13:39:19,080 CRITI [root:%(message)s
+2021-07-14 13:41:22,594 WARNI [root:12] warn message
+2021-07-14 13:41:22,594 ERROR [root:13] error message
+2021-07-14 13:41:22,594 CRITI [root:14] critical message
+2021-07-14 13:43:30,804 WARNI [root:12] warn message
+2021-07-14 13:43:30,804 ERROR [root:13] error message
+2021-07-14 13:43:30,804 CRITI [root:14] critical message
+2021-07-14 13:43:37,845 WARNI [root:12] warn message
+2021-07-14 13:43:37,845 ERROR [root:13] error message
+2021-07-14 13:43:37,845 CRITI [root:14] critical message
