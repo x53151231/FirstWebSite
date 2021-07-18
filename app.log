@@ -13,3 +13,6 @@
 2021-07-14 13:43:37,845 WARNI [root:12] warn message
 2021-07-14 13:43:37,845 ERROR [root:13] error message
 2021-07-14 13:43:37,845 CRITI [root:14] critical message
+2021-07-14 14:47:57,279 WARNI [root:13] warn message
+2021-07-14 14:47:57,279 ERROR [root:14] error message
+2021-07-14 14:47:57,279 CRITI [root:15] critical message
